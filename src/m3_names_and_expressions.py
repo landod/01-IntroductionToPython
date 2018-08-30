@@ -77,18 +77,18 @@ print(2**0.5)
 #      -- Write code of the form   print(type(BLAH)).
 #      -- RUN the code to LEARN its TYPE.
 
-#       "hello"
-#       'hello'
-#       "a b c"
-#       3 + 3
-#       "3" + "3"
-#       2 ** 100
-#       2.0 ** 100
-#       math.sin(8)
-#       math.sin
-#       print
-#       math
-#       'math'
+#       "hello" string
+#       'hello' string
+#       "a b c" string
+#       3 + 3   integer
+#       "3" + "3"   string
+#       2 ** 100    integer
+#       2.0 ** 100  integer
+#       math.sin(8) float
+#       math.sin    float
+#       print   built in
+#       math    library
+#       'math'  string
 #
 # After you have written and run the code to learn the TYPE
 # of each of the above, change the above _TODO_ to DONE.
@@ -101,7 +101,7 @@ print(type("3" + "3"))
 print(type(2 ** 100))
 print(type(2.0 ** 100))
 print(type(math.sin(8)))
-print(type(math.sin()))
+print(type(math.sin))
 print(type(print()))
 print(type(math))
 print(type('math'))

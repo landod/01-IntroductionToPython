@@ -55,6 +55,7 @@ for k in range(8):
    not_turtle.pen_down()
    size=size-15
 
+window.close_on_mouse_click()
 
 
 

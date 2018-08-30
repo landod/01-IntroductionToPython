@@ -29,6 +29,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 ###############################################################################
 
 import rosegraphics as rg
+window = rg.TurtleWindow()
 turtle = rg.SimpleTurtle()
 not_turtle = rg.SimpleTurtle()
 

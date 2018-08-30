@@ -33,18 +33,27 @@ turtle = rg.SimpleTurtle()
 not_turtle = rg.SimpleTurtle()
 
 turtle.pen = rg.Pen('pink',11)
-not_turtle.pen = rg.Pen('blue',50)
+not_turtle.pen = rg.Pen('blue',8)
 
 turtle.speed = 10
-size= 100
+not_turtle.speed = 10
+size= 150
 
-for k in range(11):
+for k in range(8):
 
    turtle.draw_circle(size)
    turtle.pen_up()
    turtle.left(90)
    turtle.forward(5)
    turtle.pen_down()
-   size=size-8
+
+   not_turtle.draw_regular_polygon(8,size)
+   not_turtle.pen_up()
+   not_turtle.right(45)
+   not_turtle.backward(15)
+   not_turtle.pen_down()
+   size=size-15
+
+
 
 

@@ -8,9 +8,8 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 # DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
-import rosegraphics as rg
 ########################################################################
-# TODO: 2.
+# DONE: 2.
 #   Write code that accomplishes the following:
 #     - Constructs a SimpleTurtle with a  blue  Pen.
 #     - Makes the SimpleTurtle go straight UP 200 pixels.
@@ -39,5 +38,17 @@ import rosegraphics as rg
 #
 ###############################################################################
 
+import rosegraphics as rg
+window = rg.TurtleWindow()
 
+drake = rg.SimpleTurtle()
+drake.pen = rg.Pen('blue', 5)
+drake.left(90)
+drake.forward(200)
+drake.pen_up()
+drake.go_to(rg.Point(100, -40))
+drake.pen_down()
+drake.pen = rg.Pen('green', 10)
+drake.backward(150)
 
+window.close_on_mouse_click()
